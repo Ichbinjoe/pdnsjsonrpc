@@ -59,6 +59,14 @@ type DomainMetadataQuery struct {
 
 type DomainMetadataResponse []string
 
+type SetDomainMetadataQuery struct {
+	Name  string   `json:"name"`
+	Kind  string   `json:"kind"`
+	Value []string `json:"value"`
+}
+
+// Returns BoolResponse
+
 type DomainKeysQuery struct {
 	Name string `json:"name"`
 	Kind string `json:"kind,omitempty"`
